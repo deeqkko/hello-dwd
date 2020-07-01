@@ -5,7 +5,7 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('Hello DevOps with Docker!')
+  response.send(`Hello DevOps with Docker! Now it's working!`)
 })
 
 app.listen(app.get('port'), function() {
